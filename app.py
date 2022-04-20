@@ -16,7 +16,7 @@ def main():
 
     html_string = '''
     <script language="javascript">
-    alert("நன்றி! / Thank You  / धन्यवाद - Project by Immanuel");
+    alert("- Project by Nandhini");
     </script>
     '''
 
@@ -141,7 +141,7 @@ def main():
 
     if st.button("Find Price",help="Click here to predict the price"):
         st.markdown("<h1 style='text-align: center; color: grey;'>Estimated House Price</h1>", unsafe_allow_html=True)
-        st.write("*******************************",  low , 'to', high   ,"*******************************")
+        st.write("$$$$$$$$$$$$$$$$$$$$$$",  low , 'to', high   ,"$$$$$$$$$$$$$$$$$$$$$$$")
         st.balloons()
 
 
