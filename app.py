@@ -14,11 +14,7 @@ from sklearn.model_selection import train_test_split
 def main():
     st.set_page_config(page_title='House-Price-Finder', page_icon='resources/favicon.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-    html_string = '''
-    <script language="javascript">
-    alert("- Project by Nandhini");
-    </script>
-    '''
+    
 
     components.html(html_string)
     rating_string = '''
@@ -38,7 +34,7 @@ def main():
     model = pickle.load(open('House_pkl','rb'))
 
 
-    st.markdown("<h1 style='text-align: center; color: grey;'>Chennai House Price</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: grey;'>Chennai House Prediction</h1>", unsafe_allow_html=True)
 
 
 
@@ -145,7 +141,7 @@ def main():
         st.balloons()
 
 
-    components.html(rating_string)
+
 
 
 if __name__=='__main__':
