@@ -14,7 +14,11 @@ from sklearn.model_selection import train_test_split
 def main():
     st.set_page_config(page_title='House-Price-Finder', page_icon='resources/favicon.png', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-    
+    html_string = '''
+    <script language="javascript">
+    alert("Thank You for Visiting My website  - Project by Nandhini");
+    </script>
+    '''
 
     components.html(html_string)
     rating_string = '''
@@ -31,10 +35,10 @@ def main():
 
     #Dataset
     data = pd.read_csv("cleaned.csv")
-    model = pickle.load(open('House_pkl','rb'))
+    model = pickle.load(open('model_pkl','rb'))
 
 
-    st.markdown("<h1 style='text-align: center; color: grey;'>Chennai House Prediction</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: grey;'>Chennai House Price</h1>", unsafe_allow_html=True)
 
 
 
@@ -66,7 +70,7 @@ def main():
         filtered=data[data['AREA']=='T Nagar']
         AREA = 7
 
-#area,buildtype,sqft,mzzone,parking,street
+
 
 
 
@@ -137,13 +141,17 @@ def main():
 
     if st.button("Find Price",help="Click here to predict the price"):
         st.markdown("<h1 style='text-align: center; color: grey;'>Estimated House Price</h1>", unsafe_allow_html=True)
-        st.write("$$$$$$$$$$$$$$$$$$$$$$",  low , 'to', high   ,"$$$$$$$$$$$$$$$$$$$$$$$")
-        st.balloons()
+        st.write("*******************************",  low , 'to', high   ,"*******************************")
 
 
 
+    components.html(rating_string)
 
 
 if __name__=='__main__':
     main()
+
+
+
+#---> Nandhini <-----#
 

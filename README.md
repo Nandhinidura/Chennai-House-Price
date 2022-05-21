@@ -1,14 +1,74 @@
-# Chennai-House-Price
-CHENNAI HOUSE PRICE PREDICTION.
 
-Problem Statement:
+# Chennai House Pricing
 
-Real estate transactions are quite opaque sometimes and it may be difficult for a newbie to know the fair price of any given home. Thus, multiple real estate websites have the functionality to predict the prices of houses given different features regarding it. Such forecasting models will help buyers to identify a fair price for the home and also give insights to sellers as to how to build homes that fetch them more money. Chennai house sale price data is shared here and the participants are expected to build a sale price prediction model that will aid the customers to find a fair price for their homes and also help the sellers understand what factors are fetching more money for the houses?
+This project was done by real dataset.
+
+## 🛠 APP
+--->> click [House-Pricing-App](http://chennai-houseprice.herokuapp.com/)   <<--- Click
 
 
+## Author Bio
+
+| Profile | Link |
+| ------ | ------ |
+| Linkedin | [https://www.linkedin.com/in/immangeek/]|
+| Kaggle | [https://www.kaggle.com/immanvel]|
+| Instagram | [https://www.instagram.com/iam_immanuel_/] |
 
 
-SUGGESTION TO BUYERS AND REAL ESTATE AGENTS.
+## Roadmap
 
-ANSWER TO REAL ESTATE AGENT
-If any agent want to build any type of building in chennai. I would suggest him to build a "Commercial" building. When it comes to the location I would suggest him "T Nagar", as the first choice because the 'average/minimum/maximum sales_price' of "T Nagar" is higher than other Area. I would suggest the agent to build with the "Parking facility" and with "All_Utility" . Gravel type street fetches more money than Paved street. I will strongly suggest not to construct any type of building which has no access to the building.
+- Getting the Data
+
+- Cleared and fixed the datasets
+
+- Explored some useful thing is dataset by data analysing
+
+- Using some machine learning models to find out the best one
+
+- After having the best model predict the price
+
+- Prepared the app for deployment with the help of streamlit
+
+- After completed app pushed in github and make live in heroku
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/immangeek/Chennai-Housing-Price.git
+```
+
+Go to the project directory
+
+```bash
+  cd chennai-housing-price
+```
+
+Install dependencies
+
+```bash
+  pip install streamlit
+```
+
+Start the server
+
+```bash
+  streamlit run app.py
+```
+
+
+## Support
+
+For support, email immangeek@gmail.com or give hand in git.
+
+
+## Related
+
+Here are some related projects
+
+[Chennai IPL Dashboard](https://github.com/immangeek/IPL-Data-app)
+
+
